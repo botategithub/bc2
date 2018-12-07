@@ -208,13 +208,7 @@ if (message.content === ".help") {
 
       .addField(`${prefix}obc`, `لارسال رسالة جماعية للاون لاين فقط`)
 
-      .addField(`${prefix}invite`, `لدعوة البوت الي سيرفرك`)
-
       .addField(`${prefix}bot`, `لروياة معلومات البوت`)
-
-      .addField(`${prefix}support`, `لسيرفر الدعم الفني حق البوت`)
-
-    
 
   message.author.send({embed});
 
@@ -253,50 +247,8 @@ client.on("message", message => {
 
 
 
-   client.on('message', message => {
-
-       if(message.content.startsWith(`${prefix}invite`)){
-
-           if(!message.channel.guild) return message.channel.send("This Command is Just For Servers!")
-
-           var embed = new Discord.RichEmbed()
-
-           .setTitle("Invite Broadcast Bot")
-
-           .setURL("https://discordapp.com/oauth2/authorize?client_id=484664339085787136&permissions=8&scope=bot")
-
-           .setTimestamp()
-
-           .setColor("RANDOM")
-
-           message.channel.send({embed})
-
-       }
-
-   });
    
-   
-    client.on('message', message => {
 
-       if(message.content.startsWith(`${prefix}support`)){
-
-           if(!message.channel.guild) return message.channel.send("This Command is Just For Servers!")
-
-           var embed = new Discord.RichEmbed()
-
-           .setTitle("Support Server")
-
-           .setURL("https://discord.gg/v84KKjD")
-
-           .setTimestamp()
-
-           .setColor("RANDOM")
-
-           message.channel.send({embed})
-
-       }
-
-   });
 
 
 
