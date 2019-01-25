@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 
 client.on('ready', () => {
- client.user.setGame('Dz Alts','https://www.twitch.tv/peery13');
+ client.user.setGame('.help | bc bot ','https://www.twitch.tv/peery13');
   console.log('---------------');
   console.log(' Platinum Bot Is Online')
   console.log('---------------')
